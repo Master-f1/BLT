@@ -13,16 +13,16 @@ local addonUsers = {}
 local inspectedUnits = {}
 local updateCooldownTimer = 0
 local classSpecs = {
-	["DRUID"] =         { [1] = "Balance",       [2] = "Feral",        [3] = "Restoration" },
-	["DEATHKNIGHT"] =   { [1] = "Blood",         [2] = "Frost",        [3] = "Unholy"      },
-	["MAGE"] =          { [1] = "Arcane",        [2] = "Fire",         [3] = "Frost"       },
-	["PRIEST"] =        { [1] = "Discipline",    [2] = "Holy",         [3] = "Shadow"      },
-	["ROGUE"] =         { [1] = "Assassination", [2] = "Combat",       [3] = "Subtlety"    },
-	["WARRIOR"] =       { [1] = "Arms",          [2] = "Fury",         [3] = "Protection"  },
-	["HUNTER"] =        { [1] = "Beastmastery",  [2] = "Marksmanship", [3] = "Survival"    },
-	["PALADIN"] =       { [1] = "Holy",          [2] = "Protection",   [3] = "Retribution" },
-	["SHAMAN"] =        { [1] = "Elemental",     [2] = "Enhancement",  [3] = "Restoration" },
-	["WARLOCK"] =       { [1] = "Affliction",    [2] = "Demonology",   [3] = "Destruction" }
+	["DRUID"] =         { [1] = L["Balance"],       [2] = L["Feral"],        [3] = L["Restoration"] },
+	["DEATHKNIGHT"] =   { [1] = L["Blood"],         [2] = L["Frost"],        [3] = L["Unholy"]      },
+	["MAGE"] =          { [1] = L["Arcane"],        [2] = L["Fire"],         [3] = L["Frost"]       },
+	["PRIEST"] =        { [1] = L["Discipline"],    [2] = L["Holy"],         [3] = L["Shadow"]      },
+	["ROGUE"] =         { [1] = L["Assassination"], [2] = L["Combat"],       [3] = L["Subtlety"]    },
+	["WARRIOR"] =       { [1] = L["Arms"],          [2] = L["Fury"],         [3] = L["Protection"]  },
+	["HUNTER"] =        { [1] = L["Beastmastery"],  [2] = L["Marksmanship"], [3] = L["Survival"]    },
+	["PALADIN"] =       { [1] = L["Holy"],          [2] = L["Protection"],   [3] = L["Retribution"] },
+	["SHAMAN"] =        { [1] = L["Elemental"],     [2] = L["Enhancement"],  [3] = L["Restoration"] },
+	["WARLOCK"] =       { [1] = L["Affliction"],    [2] = L["Demonology"],   [3] = L["Destruction"] }
 }
 
 -- Addon-specific variables --

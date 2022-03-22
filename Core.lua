@@ -315,7 +315,7 @@ local function CooldownFrame_OnEnter(self)
 			if playerName and playerName ~= UNKNOWNOBJECT then
 				local function AddTooltip(text, r, g, b)
 					if BLT.playerClass[playerName] then
-						GameTooltip:AddLine(playerName .. ": " .. "Level " .. BLT.playerLevel[playerName] .. " " .. BLT.playerClass[playerName] .. " (" .. BLT.playerSpecs[playerName] .. ", " .. BLT.playerTalentPoints[playerName] .. ")" .. text, r, g, b)
+						GameTooltip:AddLine(playerName .. ": " .. L["Level "] .. BLT.playerLevel[playerName] .. " " .. BLT.playerClass[playerName] .. " (" .. BLT.playerSpecs[playerName] .. ", " .. BLT.playerTalentPoints[playerName] .. ")" .. text, r, g, b)
 					end
 				end
 				-- Make sure the spell icon exists and is shown for the current class
