@@ -23,52 +23,52 @@ local contains, clearList = BLT.contains, BLT.clearList
 local db
 local defaults = {
 	profile = {
-		enable = true,
-		scale = 50,
-		offset = 50,
-		posX= 300,
-		posY= 800,
-		iconSize= 50,
-		iconOffsetY = 10,
-		iconBorderSize = 2,
-		iconFont= "Friz Quadrata TT",
-		iconTextSize= 28,
-		iconTextAnchor = "CENTER",
-		iconTextColor = { r = 1, g = 1, b = 1, a = 1 },
-		barWidth= 50,
-		barHeight = 50,
-		barOffset = 50,
-		barOffsetX = 50,
-		barFont = "Friz Quadrata TT",
-		barPlayerTextSize = 11,
-		barTargetTextSize = 8,
-		barCDTextSize = 11,
-		displayTargets = true,
-		barTargetTextType = "SEPARATE",
+		enable              = true,
+		scale               = 50,
+		offset              = 50,
+		posX                = 300,
+		posY                = 800,
+		iconSize            = 50,
+		iconOffsetY         = 10,
+		iconBorderSize      = 2,
+		iconFont            = "Friz Quadrata TT",
+		iconTextSize        = 28,
+		iconTextAnchor      = "CENTER",
+		iconTextColor       = { r = 1, g = 1, b = 1, a = 1 },
+		barWidth            = 50,
+		barHeight           = 50,
+		barOffset           = 50,
+		barOffsetX          = 50,
+		barFont             = "Friz Quadrata TT",
+		barPlayerTextSize   = 11,
+		barTargetTextSize   = 8,
+		barCDTextSize       = 11,
+		displayTargets      = true,
+		barTargetTextType   = "SEPARATE",
 		barTargetTextCutoff = -30,
 		barTargetTextAnchor = "LEFT",
-		barTargetTextColor = { r = 1, g = 1, b = 1, a = 1 },
-		barPlayerTextColor = { r = 1, g = 1, b = 1, a = 1 },
-		barCDTextColor = { r = 1, g = 1, b = 1, a = 1 },
-		barTargetTextPosX = 50,
-		barTargetTextPosY = 5,
-		split = 2,
-		texture = "Blizzard",
-		sorting = {},
-		cooldowns = {
+		barTargetTextColor  = { r = 1, g = 1, b = 1, a = 1 },
+		barPlayerTextColor  = { r = 1, g = 1, b = 1, a = 1 },
+		barCDTextColor      = { r = 1, g = 1, b = 1, a = 1 },
+		barTargetTextPosX   = 50,
+		barTargetTextPosY   = 5,
+		split               = 2,
+		texture             = "Blizzard",
+		sorting             = {},
+		cooldowns           = {
 			[29166] = true, -- Innervate
 			[48477] = true, -- Rebirth
 			[34477] = true, -- Misdirection
 			[31821] = true, -- Aura Mastery
 			[64205] = true, -- Divine Sacrifice
-			[6940] = true, -- Hand of Sacrifice
+			[6940]  = true, -- Hand of Sacrifice
 			[47788] = true, -- Guardian Spirit
 			[64901] = true, -- Hymn of Hope
 			[33206] = true, -- Pain Suppression
 			[57934] = true, -- Tricks of the Trade
 			[16190] = true, -- Mana Tide Totem
 			[47883] = true, -- Soulstone Resurrection
-			[54589] = true -- Glowing Twilight Scale
+			[54589] = true  -- Glowing Twilight Scale
 		}
 	}
 }
@@ -315,7 +315,7 @@ local function CooldownFrame_OnEnter(self)
 			if playerName and playerName ~= UNKNOWNOBJECT then
 				local function AddTooltip(text, r, g, b)
 					if BLT.playerClass[playerName] then
-						GameTooltip:AddLine(playerName .. ": " .. L["Level "] .. BLT.playerLevel[playerName] .. " " .. BLT.playerClass[playerName] .. " (" .. BLT.playerSpecs[playerName] .. ", " .. BLT.playerTalentPoints[playerName] .. ")" .. text, r, g, b)
+						GameTooltip:AddLine(playerName .. ": " .. "Level " .. BLT.playerLevel[playerName] .. " " .. BLT.playerClass[playerName] .. " (" .. BLT.playerSpecs[playerName] .. ", " .. BLT.playerTalentPoints[playerName] .. ")" .. text, r, g, b)
 					end
 				end
 				-- Make sure the spell icon exists and is shown for the current class

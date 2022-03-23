@@ -87,7 +87,7 @@ elseif GetLocale() == "frFR" then
 		[55233] = "Sangre vampírica",
 		[49016] = "Hystérie",
 		[61336] = "Instincts de survie",
-		[26983] = "Tranquillité améliorée",
+		[26983] = "Tranquillité améliorée	",
 		[45438] = "Iceberg",
 		[66233] = "Ardent défenseur",
 		[31821] = "Maîtrise des auras",
@@ -191,7 +191,7 @@ elseif GetLocale() == "zhCN" or GetLocale() == "zhTW" then
 else
 	BLT_ItemNames = {
 		[54589] = "Glowing Twilight Scale",
-		[50364] = "Sindragosa's Flawless Fang"
+		[50364] = "Sindragosa's Flawless Fang",
 	}
 	BLT_TalentNames = {
 		[51052] = "Anti-Magic Zone",

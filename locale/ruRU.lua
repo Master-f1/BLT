@@ -165,6 +165,7 @@ L["All data cleared!"] = "Все данные очищенны!"
 L["Configure"] = true
 L["Show the addon configurations"] = "Открыть окно настроек"
 
+--L["Test "] = "Тест "
 L["Dead"] = true
 L["Out of Range"] = true
 L["%s is ready to be used by %s"] = "%s готов к использованию %s"
@@ -174,8 +175,7 @@ L["Target"] = true
 L["Height"] = true
 L["Font Size"] = true
 L["Width"] = true
-
-L["Level "] = "Уровень "
+--[[
 L["Balance"] = "Баланс"
 L["Feral"] = "Сила зверя"
 L["Restoration"] ="Исцеление"
@@ -206,3 +206,4 @@ L["Restoration"] ="Исцеление"
 L["Affliction"] = "Колдовство"
 L["Demonology"] = "Демонология"
 L["Destruction"] ="Разрушение"
+]]
