@@ -219,11 +219,11 @@ local function FormatCooldownText(cooldownLeft, printText)
 
 	if printText then
 		if minutes > 0 and seconds > 0 then
-			return minutes .. "min " .. seconds .. "sec"
+			return minutes .. L[" min "] .. seconds .. L[" sec"]
 		elseif minutes > 0 then
-			return minutes .. "min"
+			return minutes .. L[" min "]
 		else
-			return seconds .. "sec"
+			return seconds .. L[" sec"]
 		end
 	else
 		return minutes .. ":" .. secondsStr
@@ -1205,7 +1205,6 @@ function BLT:UpdateIconFrame(index)
 					SendChatMessage(L["%s is ready to be used by %s"]:format(contains(trackCooldownSpellIDs, frame.id) and self:Spell(frame.id, true) or self:Item(frame.id, true), next(players) and tconcat(players, ", ") or "—"), BLT:GetGroupState())
 				else
 					self:Print(L["%s is ready to be used by %s"]:format(contains(trackCooldownSpellIDs, frame.id) and self:Spell(frame.id or self:Item(frame.id)), next(players) and tconcat(players, ", ") or "—"))
-					SendCharMessage(("%s"):format(), BLT:GetGroupState())
 				end
 			end
 		end)
@@ -1354,8 +1353,8 @@ function BLT:DebugCooldownBars()
 			local isItem = frame.isItem
 
 			for i=1, 7 do
-				local testFrame = self:CreateCooldownFrame("Test" .. i, name, id, (db.displayTargets and
-						not isItem and BLT.spells[class][name].tar) and L["Target"] .. i+1 or nil, isItem)
+				local testFrame = self:CreateCooldownFrame(L["Test "] .. i, name, id, (db.displayTargets and
+						not isItem and BLT.spells[class][name].tar) and L["Target "] .. i+1 or nil, isItem)
 				testFrame.class = class
 				testFrame.isTest = true
 			end

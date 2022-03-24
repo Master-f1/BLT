@@ -2,7 +2,6 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("BLT", "ruRU")
 if not L then return end
 
-L["BLT Commands"] = true
 L["General"] = "Настройки"
 L["Configure general options"] = true
 L["Enable"] = "Включить"
@@ -25,8 +24,7 @@ L["Online raid members using the addon: %s"] = "Участники рейда и
 L["You are not in a raid group!"] = "Вы не в рейдовой группе!"
 
 L["Show When..."] = "Видимость"
-L["Show BLT when..."] = true
-L["This section controls when BLT is automatically shown or hidden"] = "Этот раздел управляет автоматическим переключением видимости аддона"
+L["This section controls when BLT is automatically shown or hidden"] = "Настройка автоматического переключения видимости аддона"
 L["Use Auto Show/Hide"] = "Авто показ/скрытие"
 L["Use this option to restrict when BLT should be shown"] = "Настройка автоматического показа/скрытия аддона"
 L["Auto Show/Hide Options"] = "Выберите условие"
@@ -44,7 +42,7 @@ L["You are resting"] = "В зоне отдыха"
 L["Turning this on will cause BLT to hide whenever you are in a city or inn"] = "Скрыть панель, когда вы находитесь в городе или иной зоне, где запрещены стычки"
 
 L["Icons"] = "Иконки"
-L["Options which affect the look and behaviour of the icons"] = true
+L["Options which affect the look and behaviour of the icons"] = "Настройка внешнего вида и поведения иконок"
 L["Test Icons"] = "Тестовая панель"
 L["Show all enabled icons for testing purposes"] = "Показать тестовую панель, для детальной настройки"
 L["Icon Options"] = "Настройка иконок"
@@ -74,7 +72,7 @@ L["Text Color"] = "Цвет"
 L["Change the color of the icon text"] = "Настройка цвета текста"
 
 L["Bars"] = "Полосы"
-L["Options which affect the look and behaviour of the bars"] = true
+L["Options which affect the look and behaviour of the bars"] = "Настройка внешнего видв и поведения таймеров"
 L["Test Bars"] = "Тестовая панель"
 L["Show test bars for currently shown icons"] = "Показать тестовую панель, для детальной настройки"
 L["Display Targets"] = "Цели заклинаний"
@@ -124,7 +122,7 @@ L["Cooldown Text Color"] = "Цвет"
 L["Change the color of the cooldown text"] = "Настройка цвета текста"
 
 L["Cooldowns"] = "Кулдауны"
-L["Configure which spells/items are shown"] = true
+L["To announce in the chat about the readiness of cooldowns, press shift + left click on the icon or timer"] = "Для анонса в чат, о готовности кулдаунов, нажмите shift+левый клик по иконке или таймеру"
 L["Display %s cooldowns"] = "Показать кулдаун"
 L["DEATHKNIGHT"] = "Рыцарь Смерти"
 L["DRUID"] = "Друид"
@@ -139,7 +137,6 @@ L["WARRIOR"] = "Воин"
 L["ITEMS"] = "Тринкеты"
 
 L["Sorting"] = "Сортировка"
-L["Configure the sorting of the spells/items"] = true
 L["This section controls how spells and items are sorted"] = "Этот раздел управляет сортировкой по приоритету"
 L["Use Custom Sorting"] = "Своя сортировка"
 L["Use custom sorting instead of the default sorting"] = "Настроить сортировку иконок на панели"
@@ -151,6 +148,8 @@ L["Down"] = "Ниже"
 L["Sort Nr"] = true
 
 L["Profiles"] = "Прифили"
+
+L["BLT Commands"] = true
 L["Slash Commands"] = true
 L["Toggle"] = true
 L["Toggle BLT"] = "Переключить видимость панели"
@@ -165,16 +164,18 @@ L["All data cleared!"] = "Все данные очищенны!"
 L["Configure"] = true
 L["Show the addon configurations"] = "Открыть окно настроек"
 
---L["Test "] = "Тест "
 L["Dead"] = true
 L["Out of Range"] = true
-L["%s is ready to be used by %s"] = "%s готов к использованию %s"
-L["%s's %s will be ready in %s%s"] = "%s  %s будет готов в %s%s"
-L[" (used on %s)"] = true
-L["Target"] = true
+L["%s is ready to be used by %s"] = "%s готово к использованию у: %s"
+L["%s's %s will be ready in %s%s"] = "%s  %s откатится через %s%s"
+L[" (used on %s)"] = " (использовано в %s)"
+L["Test "] = "Тест "
+L["Target "] = "Цель "
 L["Height"] = true
 L["Font Size"] = true
 L["Width"] = true
+L[" min "] = " мин "
+L[" sec"] = " сек"
 --[[
 L["Balance"] = "Баланс"
 L["Feral"] = "Сила зверя"
