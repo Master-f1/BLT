@@ -2,6 +2,7 @@
 ## Title: BLT
 ## Notes: Tracks specific cooldowns of players in a raid/party
 ## Notes-ruRU: Отслеживает кулдауны игроков в рейде/группе
+## Author: Master-f1 (перевёл на русский)
 ## Version: 1.3.2
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibDualSpec-1.0
 ## SavedVariables: BLT_DB
