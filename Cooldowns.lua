@@ -443,8 +443,8 @@ BLT.spells = {
 			glyph = "nil",
 			glyphCd = 0
 		},
-		-- Купол
-		[GetSpellInfo(307986)] = {
+		-- Купол 302307 302308 307985 307986
+		[GetSpellInfo(307985)] = {
 			nr = 42,
 			id = 307986,
 			cd = 120,
@@ -609,22 +609,22 @@ BLT.items = {
 			spellIdHc = 71638,
 			itemId = 50364,
 			cd = 60
-		},
+		}
 		-- Червь
-		[GetItemInfo(65048) or GetItemName[65048]]  = {
-			nr = 44,
+		--[GetItemInfo(65048) or GetItemName[65048]]  = {
+			--[[nr = 44,
 			spellId = 300133,
 			spellIdHc = 300133,
 			itemId = 65048,
 			cd = 60
-		},
+		},]]
 		-- Сердце
-		[GetItemInfo(151298) or GetItemName[151298]]  = {
-			nr = 45,
+		--[GetItemInfo(151298) or GetItemName[151298]]  = {
+			--[[nr = 45,
 			spellId = 64763,
 			spellIdHc = 313530,
 			itemId = 151298,
 			cd = 60
-		}
+		}]]
 	}
 }
